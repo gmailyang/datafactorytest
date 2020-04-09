@@ -1,0 +1,7 @@
+{
+	"name": "S4HANA-test",
+	"properties": {
+		"description": "read data from s4/hana",
+		"annotations": []
+	}
+}
