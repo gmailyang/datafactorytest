@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureDataLakeStoreLocation",
-				"folderPath": "s4hanatest"
+				"folderPath": "s4hanatest2"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
