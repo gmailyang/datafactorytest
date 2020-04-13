@@ -14,7 +14,13 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					null,
+					{
+						"name": "Destination",
+						"value": "//"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "RestSource",
