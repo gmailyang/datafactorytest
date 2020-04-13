@@ -3,13 +3,21 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
-		"pipelines": [],
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "test_rest",
+					"type": "PipelineReference"
+				}
+			}
+		],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
-				"frequency": "Minute",
+				"frequency": "Day",
 				"interval": 1,
 				"startTime": "2020-04-13T15:10:00.000Z",
+				"endTime": "2020-04-14T23:14:08.949Z",
 				"timeZone": "UTC"
 			}
 		}
