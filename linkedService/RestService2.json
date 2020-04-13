@@ -5,11 +5,11 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "https://my302562-api.s4hana.ondemand.com/sap/opu/odata/sap/YY1_CUSTOMSALESORDER_CDS/YY1_CustomSalesOrder/?$format=json",
+			"url": "https://my302562-api.s4hana.ondemand.com/sap/opu/odata/sap/YY1_CUSTOMSALESORDER_CDS/YY1_CustomSalesOrde",
 			"enableServerCertificateValidation": false,
 			"authenticationType": "Basic",
 			"userName": "azure_test",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRGLVRFU1QyMDIwMDQwN18xZGU1NTYzZC0zOTViLTQ1NjItODBkZC1mYzJjZDI1YTY4NGUiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRGLVRFU1QyMDIwMDQwN183MWYxZmU3Mi05YTFmLTQ0ZTUtOGI1MC1mMjI3MjQ2ZDJlNmMiDQp9"
 		}
 	}
 }
