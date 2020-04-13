@@ -2,14 +2,15 @@
 	"name": "DelimitedText1",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage1",
+			"referenceName": "linkedService1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation"
+				"type": "AzureDataLakeStoreLocation",
+				"folderPath": "s4hanatest"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
