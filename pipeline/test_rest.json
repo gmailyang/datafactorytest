@@ -14,7 +14,16 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "https://my302562-api.s4hana.ondemand.com/sap/opu/odata/sap/YY1_CUSTOMSALESORDER_CDS/YY1_CustomSalesOrder/?$format=json"
+					},
+					{
+						"name": "Destination",
+						"value": "s4hanatest2/"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "RestSource",
@@ -25,7 +34,9 @@
 					"sink": {
 						"type": "DelimitedTextSink",
 						"storeSettings": {
-							"type": "AzureDataLakeStoreWriteSettings"
+							"type": "AzureDataLakeStoreWriteSettings",
+							"maxConcurrentConnections": 4,
+							"copyBehavior": "MergeFiles"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
@@ -33,7 +44,8 @@
 							"fileExtension": ".txt"
 						}
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"parallelCopies": 3
 				},
 				"inputs": [
 					{
