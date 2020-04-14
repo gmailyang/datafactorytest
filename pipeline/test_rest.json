@@ -35,8 +35,7 @@
 						"type": "DelimitedTextSink",
 						"storeSettings": {
 							"type": "AzureDataLakeStoreWriteSettings",
-							"maxConcurrentConnections": 4,
-							"copyBehavior": "MergeFiles"
+							"maxConcurrentConnections": 4
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
