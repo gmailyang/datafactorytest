@@ -5,6 +5,11 @@
 			"referenceName": "RestService2",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"P_CreationDate": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "RestResource",
 		"typeProperties": {
