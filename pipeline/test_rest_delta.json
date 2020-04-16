@@ -92,7 +92,7 @@
 								},
 								"sink": {
 									"name": "CreationDate",
-									"type": "String"
+									"type": "DateTime"
 								}
 							},
 							{
