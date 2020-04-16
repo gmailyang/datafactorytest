@@ -1,5 +1,5 @@
 {
-	"name": "test_rest_copy2",
+	"name": "test_rest_delta",
 	"properties": {
 		"description": "test rest api",
 		"activities": [
