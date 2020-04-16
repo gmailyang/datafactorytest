@@ -91,7 +91,8 @@
 									"path": "['CreationDate']"
 								},
 								"sink": {
-									"name": "CreationDate"
+									"name": "CreationDate",
+									"type": "String"
 								}
 							},
 							{
