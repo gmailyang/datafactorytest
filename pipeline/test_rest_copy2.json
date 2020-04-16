@@ -241,11 +241,6 @@
 				]
 			}
 		],
-		"parameters": {
-			"P_CreationDate": {
-				"type": "string"
-			}
-		},
 		"annotations": []
 	}
 }
