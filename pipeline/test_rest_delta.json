@@ -40,6 +40,30 @@
 						"mappings": [
 							{
 								"source": {
+									"path": "['__metadata']['id']"
+								},
+								"sink": {
+									"name": "id"
+								}
+							},
+							{
+								"source": {
+									"path": "['__metadata']['uri']"
+								},
+								"sink": {
+									"name": "uri"
+								}
+							},
+							{
+								"source": {
+									"path": "['__metadata']['type']"
+								},
+								"sink": {
+									"name": "type"
+								}
+							},
+							{
+								"source": {
 									"path": "['ID']"
 								},
 								"sink": {
