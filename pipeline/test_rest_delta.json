@@ -1,7 +1,7 @@
 {
 	"name": "test_rest_delta",
 	"properties": {
-		"description": "test rest api",
+		"description": "test rest api delta",
 		"activities": [
 			{
 				"name": "Copy_data_Delta",
