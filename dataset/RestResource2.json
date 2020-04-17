@@ -14,7 +14,7 @@
 		"annotations": [],
 		"type": "RestResource",
 		"typeProperties": {
-			"relativeUrl": "@dataset.p_RelativeURL"
+			"relativeUrl": "@dataset().p_RelativeURL"
 		},
 		"schema": []
 	}
