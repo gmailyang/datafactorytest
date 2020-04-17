@@ -2,18 +2,11 @@
 	"name": "RestResource2",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "RestService2",
-			"type": "LinkedServiceReference",
-			"parameters": {
-				"BaseUrl": "@dataset.p_BaseURL"
-			}
+			"referenceName": "RestService1",
+			"type": "LinkedServiceReference"
 		},
 		"parameters": {
 			"p_RelativeURL": {
-				"type": "string",
-				"defaultValue": "https://my302562-api.s4hana.ondemand.com/sap/opu/odata/sap/YY1_CUSTOMSALESORDER_CDS/YY1_CustomSalesOrder?$filter=CreationDate%20ge%20(datetime%272020-04-15T00:00:00%27)&$format=json"
-			},
-			"p_BaseURL": {
 				"type": "string",
 				"defaultValue": "https://my302562-api.s4hana.ondemand.com/sap/opu/odata/sap/YY1_CUSTOMSALESORDER_CDS/YY1_CustomSalesOrder?$filter=CreationDate%20ge%20(datetime%272020-04-15T00:00:00%27)&$format=json"
 			}
