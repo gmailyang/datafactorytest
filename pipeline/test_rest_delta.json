@@ -229,7 +229,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "RestResource1",
+						"referenceName": "RestResource2",
 						"type": "DatasetReference"
 					}
 				],
@@ -241,6 +241,11 @@
 				]
 			}
 		],
+		"parameters": {
+			"p_CreationDate": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
