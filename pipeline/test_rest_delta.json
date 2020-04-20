@@ -296,7 +296,7 @@
 						}
 					},
 					"dataset": {
-						"referenceName": "Parquet1",
+						"referenceName": "ds_Parquet1",
 						"type": "DatasetReference"
 					}
 				}
