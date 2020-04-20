@@ -1,0 +1,13 @@
+{
+	"name": "ls_restAPI_linked_service",
+	"properties": {
+		"description": "Rest API linked Service",
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://conferenceapi.azurewebsites.net",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
