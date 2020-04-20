@@ -4,11 +4,11 @@
 		"description": "test rest api delta",
 		"activities": [
 			{
-				"name": "Copy_data_Delta",
+				"name": "pl_Copy_Data_Delta",
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Set variable1",
+						"activity": "ac_Set_Variable",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -302,7 +302,8 @@
 				}
 			},
 			{
-				"name": "Set variable1",
+				"name": "ac_Set_Variable",
+				"description": "Set Variable",
 				"type": "SetVariable",
 				"dependsOn": [],
 				"userProperties": [],
@@ -312,6 +313,12 @@
 				}
 			}
 		],
+		"parameters": {
+			"p_relativeURL": {
+				"type": "string",
+				"defaultValue": "v_relativeURL"
+			}
+		},
 		"variables": {
 			"v_relativeURL": {
 				"type": "String"
