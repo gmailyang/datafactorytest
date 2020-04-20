@@ -1,0 +1,25 @@
+{
+	"name": "ds_source_rest_API",
+	"properties": {
+		"description": "API source for CDS veiws",
+		"linkedServiceName": {
+			"referenceName": "ls_restapi_cds_views",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_relativeURL": {
+				"type": "string",
+				"defaultValue": "/speakers"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@dataset().p_relativeURL",
+				"type": "Expression"
+			}
+		},
+		"schema": []
+	}
+}
