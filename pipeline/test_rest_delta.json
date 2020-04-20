@@ -263,7 +263,7 @@
 						"referenceName": "RestResource2",
 						"type": "DatasetReference",
 						"parameters": {
-							"p_RelativeURL": "@string(variables(p_relativeURL))"
+							"p_RelativeURL": "p_relativeURL"
 						}
 					}
 				],
