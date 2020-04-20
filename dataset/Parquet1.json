@@ -10,10 +10,104 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureDataLakeStoreLocation",
+				"fileName": "data_2b182325-b775-47db-aa02-d4df6f033b4a_66d35973-4b70-4a40-9988-e1e133840a0d.parquet",
 				"folderPath": "s4hanatest3"
 			},
 			"compressionCodec": "snappy"
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "ID",
+				"type": "UTF8"
+			},
+			{
+				"name": "SalesOrder",
+				"type": "UTF8"
+			},
+			{
+				"name": "CostCenter",
+				"type": "UTF8"
+			},
+			{
+				"name": "SoldToParty",
+				"type": "UTF8"
+			},
+			{
+				"name": "SalesOrganization",
+				"type": "UTF8"
+			},
+			{
+				"name": "LastChangedByUser",
+				"type": "UTF8"
+			},
+			{
+				"name": "CreationDate",
+				"type": "UTF8"
+			},
+			{
+				"name": "CreatedByUser",
+				"type": "UTF8"
+			},
+			{
+				"name": "SalesOrderType",
+				"type": "UTF8"
+			},
+			{
+				"name": "SalesOrder_01",
+				"type": "UTF8"
+			},
+			{
+				"name": "TaxAmount",
+				"type": "UTF8"
+			},
+			{
+				"name": "NetPriceQuantityUnit",
+				"type": "UTF8"
+			},
+			{
+				"name": "NetPriceQuantity",
+				"type": "UTF8"
+			},
+			{
+				"name": "NetPriceAmount",
+				"type": "UTF8"
+			},
+			{
+				"name": "TransactionCurrency",
+				"type": "UTF8"
+			},
+			{
+				"name": "NetAmount",
+				"type": "UTF8"
+			},
+			{
+				"name": "OrderQuantityUnit",
+				"type": "UTF8"
+			},
+			{
+				"name": "OrderQuantity",
+				"type": "UTF8"
+			},
+			{
+				"name": "Plant",
+				"type": "UTF8"
+			},
+			{
+				"name": "Material",
+				"type": "UTF8"
+			},
+			{
+				"name": "SalesOrderItemType",
+				"type": "UTF8"
+			},
+			{
+				"name": "SalesOrderItem",
+				"type": "UTF8"
+			},
+			{
+				"name": "SalesOrderItemCategory",
+				"type": "UTF8"
+			}
+		]
 	}
 }
