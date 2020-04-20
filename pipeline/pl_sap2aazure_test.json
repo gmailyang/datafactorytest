@@ -238,7 +238,13 @@
 				"inputs": [
 					{
 						"referenceName": "ds_source_rest_API",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"p_relativeURL": {
+								"value": "@pipeline().parameters.p_relativeURL",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
