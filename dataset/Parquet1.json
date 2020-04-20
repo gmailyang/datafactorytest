@@ -10,7 +10,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureDataLakeStoreLocation",
-				"fileName": "data_2b182325-b775-47db-aa02-d4df6f033b4a_66d35973-4b70-4a40-9988-e1e133840a0d.parquet",
+				"fileName": {
+					"value": "@pipeline().TriggerTime",
+					"type": "Expression"
+				},
 				"folderPath": "s4hanatest3"
 			},
 			"compressionCodec": "snappy"
