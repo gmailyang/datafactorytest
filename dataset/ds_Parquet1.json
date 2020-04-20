@@ -1,5 +1,5 @@
 {
-	"name": "Parquet1",
+	"name": "ds_Parquet1",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStore2_Parquet",
@@ -10,6 +10,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureDataLakeStoreLocation",
+				"fileName": {
+					"value": "@pipeline().triggerTime",
+					"type": "Expression"
+				},
 				"folderPath": "s4hanatest3"
 			},
 			"compressionCodec": "snappy"
