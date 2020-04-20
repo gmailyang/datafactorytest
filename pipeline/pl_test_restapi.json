@@ -32,63 +32,7 @@
 							"quoteAllText": true
 						}
 					},
-					"enableStaging": false,
-					"translator": {
-						"type": "TabularTranslator",
-						"mappings": [
-							{
-								"source": {
-									"path": "$['collection']['version']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['collection']['href']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['collection']['links'][0]"
-								}
-							},
-							{
-								"source": {
-									"path": "$['collection']['items'][0]['href']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['collection']['items'][0]['data'][0]['name']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['collection']['items'][0]['data'][0]['value']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['collection']['items'][0]['links'][0]['rel']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['collection']['items'][0]['links'][0]['href']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['collection']['queries'][0]"
-								}
-							},
-							{
-								"source": {
-									"path": "$['collection']['template']['data'][0]"
-								}
-							}
-						],
-						"collectionReference": ""
-					}
+					"enableStaging": false
 				},
 				"inputs": [
 					{
