@@ -23,9 +23,13 @@
 						"requestMethod": "GET"
 					},
 					"sink": {
-						"type": "ParquetSink",
+						"type": "JsonSink",
 						"storeSettings": {
 							"type": "AzureDataLakeStoreWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings",
+							"quoteAllText": true
 						}
 					},
 					"enableStaging": false
@@ -38,7 +42,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Parquet1",
+						"referenceName": "Json1",
 						"type": "DatasetReference"
 					}
 				]
