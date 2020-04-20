@@ -53,7 +53,7 @@
 		"parameters": {
 			"p_relativeURL": {
 				"type": "string",
-				"defaultValue": "/speakers"
+				"defaultValue": "&$filter=CreationDate%20ge%20(datetime%272020-04-19T00:00:00%27)"
 			}
 		},
 		"annotations": []
