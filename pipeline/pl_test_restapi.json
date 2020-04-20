@@ -23,17 +23,72 @@
 						"requestMethod": "GET"
 					},
 					"sink": {
-						"type": "DelimitedTextSink",
+						"type": "JsonSink",
 						"storeSettings": {
 							"type": "AzureDataLakeStoreWriteSettings"
 						},
 						"formatSettings": {
-							"type": "DelimitedTextWriteSettings",
-							"quoteAllText": true,
-							"fileExtension": ".txt"
+							"type": "JsonWriteSettings",
+							"quoteAllText": true
 						}
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['collection']['version']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['collection']['href']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['collection']['links'][0]"
+								}
+							},
+							{
+								"source": {
+									"path": "$['collection']['items'][0]['href']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['collection']['items'][0]['data'][0]['name']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['collection']['items'][0]['data'][0]['value']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['collection']['items'][0]['links'][0]['rel']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['collection']['items'][0]['links'][0]['href']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['collection']['queries'][0]"
+								}
+							},
+							{
+								"source": {
+									"path": "$['collection']['template']['data'][0]"
+								}
+							}
+						],
+						"collectionReference": ""
+					}
 				},
 				"inputs": [
 					{
@@ -49,7 +104,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText1",
+						"referenceName": "Json1",
 						"type": "DatasetReference"
 					}
 				]
