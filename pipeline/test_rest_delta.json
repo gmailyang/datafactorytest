@@ -13,14 +13,66 @@
 					"variableName": "v_relativeURL",
 					"value": "https://my302562-api.s4hana.ondemand.com/sap/opu/odata/sap/YY1_CUSTOMSALESORDER_CDS/YY1_CustomSalesOrder?$filter=CreationDate%20ge%20(datetime%272020-04-15T00:00:00%27)&$format=json"
 				}
+			},
+			{
+				"name": "ac_Copy_Data",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "ac_Set_Variable",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "RestSource",
+						"httpRequestTimeout": "00:01:40",
+						"requestInterval": "00.00:00:00.010",
+						"requestMethod": "GET"
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureDataLakeStoreWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "ds_Source_restAPI",
+						"type": "DatasetReference",
+						"parameters": {
+							"p_ls_relativeURL": {
+								"value": "@variables('v_relativeURL')",
+								"type": "Expression"
+							}
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ds_sink_DelimitedText1",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
-		"parameters": {
-			"p_relativeURL": {
-				"type": "string",
-				"defaultValue": "v_relativeURL"
-			}
-		},
 		"variables": {
 			"v_relativeURL": {
 				"type": "String"
