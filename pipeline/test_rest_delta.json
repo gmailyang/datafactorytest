@@ -48,7 +48,7 @@
 						"referenceName": "RestResource2",
 						"type": "DatasetReference",
 						"parameters": {
-							"p_RelativeURL": "@pipeline().variables('v_relativeURL')"
+							"p_RelativeURL": "@activity(ac_Set_Variable).v_relativeURL"
 						}
 					}
 				],
