@@ -1,0 +1,24 @@
+{
+	"name": "ds_Source_restAPI",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_Source_RESTAPI",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_ls_relativeURL": {
+				"type": "string",
+				"defaultValue": "https://my302562-api.s4hana.ondemand.com/sap/opu/odata/sap/YY1_CUSTOMSALESORDER_CDS/YY1_CustomSalesOrder?$filter=CreationDate%20ge%20(datetime%272020-04-27T00:00:00%27)&$format=json"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@dataset().p_ls_relativeURL",
+				"type": "Expression"
+			}
+		},
+		"schema": []
+	}
+}
